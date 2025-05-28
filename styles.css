@@ -1,0 +1,59 @@
+/* Tipografía y diseño general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6e3; /* color crema claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Ancho uniforme para todos los elementos .txt */
+.txt {
+    width: 300px; /* mismo ancho para input, botón y resultado */
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fef9ec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Botón con estilo moderno */
+#check-btn {
+    background-color: #cdbf9d;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+#check-btn:hover {
+    background-color: #b3a17d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Resultado */
+#result {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #5c5c5c;
+    min-height: 30px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.txt {
+    animation: fadeIn 0.5s ease-in-out;
+}
